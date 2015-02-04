@@ -1,0 +1,5 @@
+1.0.1:
+    - Added CSS overrides for the logo image on the dashboard and on the admin login form. You only need to provide your own images in assets/images.
+1.0.2:
+    - Added JS functionality for the backend. You just need to fill in the assets/js/custom-javascript.js file
+    

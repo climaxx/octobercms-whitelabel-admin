@@ -1,0 +1,16 @@
+/*
+ * @author: Brunomag Concept Ltd
+ * @uri: www.brunomag.ro
+ * @description: Custom CSS styles for the admin backend 
+ * The first lines are for the admin background image and for the admin login form
+ */
+
+.oc-bg-logo {
+  background-image: url(../images/logo.png);
+}
+
+body.outer .layout > .layout-row.layout-head > .layout-cell h1 {
+    background: url("../images/logo-small.png");
+    height: 180px;
+    width: 400px;
+}
