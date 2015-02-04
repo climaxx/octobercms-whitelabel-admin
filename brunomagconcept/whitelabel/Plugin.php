@@ -18,15 +18,17 @@ class Plugin extends \System\Classes\PluginBase
 
     public function boot()
     {
-        
+
          Event::listen('backend.menu.extendItems', function($manager){
-              // admin logo override
+              // admin logo override in the admin + custom CSS/JS
              $overrides = new CSSAndJSCustomOverrides();
          });
          \Backend\Controllers\Auth::extend(function($controller) {
-            $controller->addCss('/plugins/brunomagconcept/whitelabel/assets/css/admin-overrides.css', 'core');   
+             //same files added for the login form
+            $controller->addCss('/plugins/brunomagconcept/whitelabel/assets/css/admin-overrides.css', 'core');
+            $controller->addJs('/plugins/brunomagconcept/whitelabel/assets/js/custom-javascript.js', 'core');
         });
-       
+
     }
 }
 
